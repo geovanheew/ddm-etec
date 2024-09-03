@@ -29,12 +29,22 @@ export default function NationList({ navigation }) {
 
   return (
     <View style={styles.container}>
+      {/* Card com o banner do War Thunder */}
+      <View style={styles.bannerCard}>
+        <Image
+          source={{ uri: 'https://staticfiles.warthunder.com/upload/image/!2015/December/wings_of_victory_inner.jpg' }} // Substitua pela URL da imagem do banner
+          style={styles.bannerImage}
+          resizeMode="contain" // Garante que a imagem não será cortada
+        />
+      </View>
+
+      {/* Lista de Nações */}
       <FlatList
         data={nations}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
-        numColumns={2} // Definindo duas colunas
-        columnWrapperStyle={styles.row} // Estilizando o wrapper das colunas
+        numColumns={2}
+        columnWrapperStyle={styles.row}
       />
     </View>
   );
