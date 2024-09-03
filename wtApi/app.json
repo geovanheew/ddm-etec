@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "aulaPAM",
-    "slug": "aulaPAM",
-    "version": "1.0.0",
+    "name": "wtApi",
+    "slug": "wtApi",
+    "version": "1.1.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/wtIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -18,13 +18,14 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.geovanheew.wtapi",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/wtIcon.png"
     }
   }
 }
